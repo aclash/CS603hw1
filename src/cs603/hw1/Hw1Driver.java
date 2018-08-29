@@ -12,11 +12,13 @@ public class Hw1Driver {
             int day = i + 1;
             Calendar date = Calendar.getInstance();
             date.setTime(new Date(2018, 1, day, 23, 59, 59));
+            //date.set(2018, 1, day, 23, 59, 59);
             org.addTask(new Task(name, date));
         }
 
         Calendar date = Calendar.getInstance();
         date.setTime(new Date(2018, 1, 1, 23, 59, 59));
+        //date.set(2018, 1, day, 23, 59, 59);
         org.addTask(new Task("task" + 10, date));
 
 
