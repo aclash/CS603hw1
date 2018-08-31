@@ -5,7 +5,7 @@ import java.util.Date;
 public class Hw1Driver {
 
     public static void main(String[] args) {
-        Organizer org = new Organizer();
+        Organizer<Task> org = new Organizer();
 
         for (int i = 0; i < 10; ++i) {
             String name = "task" + (9 - i);

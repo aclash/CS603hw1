@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Comparator;
 
 public class Utils {
-    public static <T> void sort(List<T> list, Comparator<? super T> cmp) {
+        public static <T> void sort(List<T> list, Comparator<? super T> cmp){
         //insertion sort
         for (int i = 1; i < list.size(); ++i) {
             int j = i - 1;

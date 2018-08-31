@@ -5,27 +5,27 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class Organizer {
+public class Organizer<T> {
 
-    private List<Task> tasks;
+    private List<T> tasks;
 
     Organizer(){
-        tasks = new ArrayList<Task>();
+        tasks = new ArrayList<T>();
     }
 
-    void addTask(Task task){
+    void addTask(T task){
         tasks.add(task);
     }
 
-    List<Task> getTasks(){
+    List<T> getTasks(){
         return tasks;
     }
 
-    void sortTasks( Comparator<Task> cmp){
+    void sortTasks( Comparator<T> cmp){
         Collections.sort(tasks, cmp);
     }
 
-    void mySortTasks(Comparator<Task> cmp){
+    void mySortTasks(Comparator<T> cmp){
         Utils.sort(tasks, cmp);
     }
 }

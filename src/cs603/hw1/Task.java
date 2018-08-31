@@ -10,9 +10,7 @@ public class Task {
         setDeadLine(deadline);
     }
 
-    private void setName(String name){
-        this.name = name;
-    }
+    private void setName(String name){ this.name = name; }
 
     private void setDeadLine(Calendar deadline){
         this.deadline = deadline;
